@@ -8,9 +8,24 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: rgba(18, 29, 49, 0.9);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-img{
+    border-radius: 100% 0 0 100% ;
+    overflow: hidden;
+    box-shadow: rgba(235, 41, 206, 0.781) 0px 5px 525px;
+
 }
 
 .container{
@@ -18,17 +33,32 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1vh;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    padding: 35px;
-    border: 2px solid black;
-    border-radius: 10%;
+    gap: 2vh;
+    padding: 2em;
+    border-radius: 0 10px 10px 0;
+    background-color: rgba(18, 27, 43, 0.84);
+    color: #ffff;
+    border: 4px double rgba(235, 41, 206, 0.781);
+    box-shadow: rgba(235, 41, 206, 0.781) 0px 5px 525px;
 }
+
+input{
+    padding: 5px;
+    border: 2px solid rgba(235, 41, 206, 0.781);
+    border-radius: 10px;
+    background-color: rgba(18, 29, 49, 0.9);
+    color: #ffff;
+    
+}
+
+input:focus {
+    box-shadow: rgba(235, 41, 206, 0.781) 0px 5px 15px;
+  }
 
 .key{
     position: absolute;
-    top: 2px;
-    right: 5px;
+    top: 5px;
+    right: 10px;
     opacity: 0.6;
 }
 
@@ -38,10 +68,32 @@ body{
 }
 
 .error-div{
+    position: absolute;
+    bottom: 10px;
+    width: auto;
+    padding: 10px;
+    background-color: lightpink;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
     display: none;
 }
 
+
 button{
-    padding: 5px 20px;
-    background-color: white;
+    padding: 5px 15px;
+    background-color: rgb(18, 27, 43);
+    border: 2px double #ffff;
+    border-radius: 10px;
+    opacity: 0.7;
+    border: 4px double rgba(189, 177, 187, 0.744);
+}
+
+button:hover{
+    opacity: 1;
+    border: 4px double rgba(235, 41, 206, 0.781);
+    box-shadow: rgba(235, 41, 206, 0.781) 0px 5px 25px;
+    color: #ffff;
+    cursor: pointer;
 }
